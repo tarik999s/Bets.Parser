@@ -54,7 +54,7 @@ public class LeonbetsService {
                 System.out.print(future.get());
             } catch (InterruptedException e) {
                 System.err.println("Current Thread was interrupted");
-                Thread.currentThread().interrupt(); // відновити флаг переривання
+                Thread.currentThread().interrupt();
             } catch (ExecutionException e) {
                 System.err.println("Error during execution: " + e.getMessage());
             }
