@@ -60,17 +60,6 @@ public class LeonbetsService {
             }
         }
 
-        for (Future<?> future : futures) {
-            try {
-                future.get();
-            } catch (InterruptedException e) {
-                System.err.println("Current Thread was interrupted");
-                Thread.currentThread().interrupt(); // відновити флаг переривання
-            } catch (ExecutionException e) {
-                System.err.println("Error during execution: " + e.getMessage());
-            }
-        }
-
         EXECUTOR_SERVICE.shutdown();
     }
 
