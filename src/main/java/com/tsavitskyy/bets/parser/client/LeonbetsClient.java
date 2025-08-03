@@ -54,7 +54,7 @@ public class LeonbetsClient {
             .addParameter("league_id", leagueId)
             .addParameter("flags", "reg,urlv2,mm2,rrc,nodup")
             .addParameter("hideClosed", "true")
-            .addParameter("vtag", "9c2cd386-31e1-4ce9-a140-28e9b63a9300") // Example vtag, adjust as needed
+            .addParameter("vtag", "9c2cd386-31e1-4ce9-a140-28e9b63a9300")
             .build();
 
         Request request = new Request.Builder()
